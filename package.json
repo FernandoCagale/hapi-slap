@@ -1,0 +1,50 @@
+{
+  "name": "slap",
+  "version": "1.1.0",
+  "description": "Slap",
+  "main": "index.js",
+  "scripts": {
+    "test": "scripts/teste"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FernandoCagale/slap.git"
+  },
+  "keywords": [
+    "hapi.",
+    "hapijs",
+    "orm",
+    "redis",
+    "cache"
+  ],
+  "author": "Fernando Cagale <fernando.b.cagale@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FernandoCagale/slap/issues"
+  },
+  "homepage": "https://github.com/FernandoCagale/slap#readme",
+  "dependencies": {
+    "joi": "10.x.x",
+    "lodash": "4.15.x",
+    "bluebird": "3.4.x",
+    "redis": "2.6.x"
+  },
+  "devDependencies": {
+    "babel-eslint": "6.1.x",
+    "babel-polyfill": "6.9.x",
+    "babel-preset-es2015": "6.9.x",
+    "babel-preset-stage-2": "6.5.x",
+    "babel-register": "6.9.x",
+    "code": "3.x.x",
+    "hapi": "14.x.x",
+    "hapi-async-handler": "1.0.x",
+    "k7": "1.0.2",
+    "k7-sequelize": "1.x.x",
+    "lab": "10.x.x",
+    "semistandard": "8.x.x",
+    "sqlite3": "3.x.x"
+  },
+  "semistandard": {
+    "parser": "babel-eslint"
+  }
+}
