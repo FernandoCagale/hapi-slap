@@ -1,7 +1,6 @@
-Hapi-Slap cache in Redis (under construction)
+Hapi-Slap cache in Redis
 ===
 [![Build Status][travis-badge]][travis-url]
-[![js-semistandard-style](https://img.shields.io/badge/code%20style-semistandard-brightgreen.svg?style=flat-square)](https://github.com/Flet/semistandard)
 
 Configuration Hapijs K7 and Slap
 

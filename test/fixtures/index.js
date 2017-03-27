@@ -19,7 +19,7 @@ const register = [{
 }, {
   register: require('hapi-async-handler')
 }, {
-  register: require('../../lib'),
+  register: require('../../build'),
   options: {
     url: 'redis://127.0.0.1:6379/0',
     expireIn: 500
