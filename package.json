@@ -1,14 +1,14 @@
 {
-  "name": "slap",
+  "name": "hapi-slap",
   "version": "1.1.0",
-  "description": "Slap",
+  "description": "hapi-slap",
   "main": "index.js",
   "scripts": {
     "test": "scripts/test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FernandoCagale/slap.git"
+    "url": "git+https://github.com/FernandoCagale/hapi-slap.git"
   },
   "keywords": [
     "hapi.",
@@ -20,9 +20,9 @@
   "author": "Fernando Cagale <fernando.b.cagale@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FernandoCagale/slap/issues"
+    "url": "https://github.com/FernandoCagale/hapi-slap/issues"
   },
-  "homepage": "https://github.com/FernandoCagale/slap#readme",
+  "homepage": "https://github.com/FernandoCagale/hapi-slap#readme",
   "dependencies": {
     "joi": "10.x.x",
     "lodash": "4.15.x",
