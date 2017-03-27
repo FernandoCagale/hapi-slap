@@ -4,7 +4,7 @@
   "description": "Slap",
   "main": "index.js",
   "scripts": {
-    "test": "scripts/teste"
+    "test": "scripts/test"
   },
   "repository": {
     "type": "git",
