@@ -2,6 +2,49 @@ Hapi-Slap cache in Redis
 ===
 [![Build Status][travis-badge]][travis-url]
 
+`url` access to Redis, default localhost. 
+`expireIn` timer pattern that will be the cache expired, default 300 (5 minutes)
+
+```javascript
+options: {
+  url: 'redis://127.0.0.1:6379/0',
+  expireIn: 300
+}
+```
+
+`rule` Cache rule `expireIn` will not use the timer pattern but rather the defined.
+
+```javascript
+plugins: {
+  slap: {
+    rule: 'colors',
+    expireIn: 60
+  }
+}
+```
+
+`clear` all reported caches will be removed, value with base `rule`.
+
+```javascript
+plugins: {
+  slap: {
+    clear: 'colors' \\ or 'colors' or ['colors', 'color-id']
+  }  
+}
+```
+
+`request.getCache()` checks if to exist cache with base on property rule defined in route.
+
+`request.getCache(id)` checking if to exist cache with base in the id specific.
+
+`request.addCache(values)` adds cache for rule defined in route, values value that will be added to the cache.
+
+`request.addCache(values, id)` added cache with base on a specific value id.
+
+`request.clearCache()` removes the cache defined in the property clear of the route.
+
+Practical Example:
+
 Configuration Hapijs K7 and Slap
 
 ```javascript
@@ -24,9 +67,9 @@ const register = [{
     }
   }
 }, {
-  register: require('slap')
+  register: require('hapi-slap')
   /* or 
-  register: require('slap')
+  register: require('hapi-slap')
   options: {
     url: 'redis://127.0.0.1:6379/0',
     expireIn: 300
